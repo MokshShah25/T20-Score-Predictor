@@ -3,13 +3,18 @@ name = "t20-score-predictor"
 version = "0.1.0"
 description = "Machine learning project for predicting T20 cricket scores using historical match data, feature engineering, and regression models"
 readme = "README.md"
-
 requires-python = ">=3.14"
-dependencies = []
 
-[project.scripts]
-t20-score-predictor = "t20_score_predictor:main"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.3",
+    "pandas>=3.0.5",
+    "scikit-learn>=1.9.0",
+    "seaborn>=0.13.2",
+    "streamlit>=1.63.0",
+    "xgboost>=3.4.1",
+]
 
-[build-system]
-requires = ["uv_build>=0.12.9,<0.13.0"]
-build-backend = "uv_build"
+[tool.uv]
+package = false
