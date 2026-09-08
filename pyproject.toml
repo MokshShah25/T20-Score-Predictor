@@ -1,0 +1,17 @@
+[project]
+name = "t20-score-predictor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Moksh Shah", email = "mokshshah2557@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = []
+
+[project.scripts]
+t20-score-predictor = "t20_score_predictor:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
